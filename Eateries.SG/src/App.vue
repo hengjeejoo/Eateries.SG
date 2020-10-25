@@ -1,16 +1,18 @@
 <template>
   <div id="app">
-    <PartnerEateries></PartnerEateries>
+    <CurrentBookings></CurrentBookings>
   </div>
 </template>
 
 <script>
-import PartnerEateries from './components/PartnerEateries.vue'
+//import PartnerEateries from './components/PartnerEateries.vue'
+import CurrentBookings from './components/CurrentBookings.vue'
 
 export default {
   name: 'App',
   components: {
-    PartnerEateries
+    //PartnerEateries,
+    CurrentBookings
   }
 }
 </script>
