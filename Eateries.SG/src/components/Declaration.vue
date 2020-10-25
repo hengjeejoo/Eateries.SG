@@ -23,7 +23,7 @@
         <div id="container-flex">
             <div class="head-content">
                 <h1>Declaration</h1>
-                <p>Testing! Declaration displayed here</p>
+                <p>Testing! Declaration subheadings here!</p>
             </div>
         </div>
     </div>
@@ -33,7 +33,7 @@
 
 <script>
     export default {
-        name: 'CurrentBookings',
+        name: 'Declaration',
     }
 
 </script>
