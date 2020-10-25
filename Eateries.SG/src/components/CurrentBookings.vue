@@ -1,7 +1,7 @@
 <template>
 <body>
     <div id="Banner" class="banner">
-        <div class="banner-wrap">
+        <div class="banner-wrap"> 
             <div class="notice-text">Check out our promotions and don't forget to invite your friends for more perks!</div>
         </div>
     </div>
@@ -11,11 +11,11 @@
                 <div class="logo-text">EATERIES.SG</div>
             </div>
             <div class="navigation-right">
-                <a href="#home">Home</a>
-                <a href="#profile">Profile</a>
-                <a href="#PartnerEateries">Partner Eateries</a>
-                <a class = "current" href="#CurrentBookings">Current Bookings</a>
-                <a href="#declaration">Declaration</a>
+                <router-link to="/home" exact>Home</router-link>
+                <router-link to="/profile" exact>Profile</router-link>
+                <router-link to="/partnereateries" exact>Partner Eateries</router-link>
+                <router-link class = "current" to="/currentbookings" exact>Current Bookings</router-link>
+                <router-link to="/declaration" exact>Declaration</router-link>
             </div>
         </div>
     </div>
@@ -32,9 +32,10 @@
 </template>
 
 <script>
-export default {
-    name: 'CurrentBookings'
-}
+    export default {
+        name: 'CurrentBookings',
+    }
+
 </script>
 
 <style>
