@@ -13,8 +13,8 @@
             <div class="navigation-right">
                 <a href="#home">Home</a>
                 <a href="#profile">Profile</a>
-                <a class="current" href="#PartnerEateries">Partner Eateries</a>
-                <a href="#CurrentBookings">Current Bookings</a>
+                <a href="#PartnerEateries">Partner Eateries</a>
+                <a class = "current" href="#CurrentBookings">Current Bookings</a>
                 <a href="#declaration">Declaration</a>
             </div>
         </div>
@@ -22,8 +22,8 @@
     <div id="Header" class="header">
         <div id="container-flex">
             <div class="head-content">
-                <h1>Partner Eateries</h1>
-                <p>Treat your taste buds and satisfy your cravings with our wide selection of partner eateries!</p>
+                <h1>Current Bookings</h1>
+                <p>Testing! Current Bookings displayed here</p>
             </div>
         </div>
     </div>
@@ -33,7 +33,7 @@
 
 <script>
 export default {
-    name: 'PartnerEateries'
+    name: 'CurrentBookings'
 }
 </script>
 
@@ -48,7 +48,7 @@ body {
 h1 {
     margin-top: 20px;
     margin-bottom: 10px;
-    color: #191b22;
+    color: #f3f5fd;
     font-size: 60px;
     line-height: 1;
     font-weight: 700;
