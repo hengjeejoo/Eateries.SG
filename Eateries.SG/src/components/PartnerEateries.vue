@@ -13,8 +13,8 @@
             <div class="navigation-right">
                 <a href="#home">Home</a>
                 <a href="#profile">Profile</a>
-                <a class="current" href="#PartnerEateries">Partner Eateries</a>
-                <a href="#CurrentBookings">Current Bookings</a>
+                <router-link class = "current" to="/partnereateries" exact>Partner Eateries</router-link>
+                <router-link to="/currentbookings" exact>Current Bookings</router-link>
                 <a href="#declaration">Declaration</a>
             </div>
         </div>

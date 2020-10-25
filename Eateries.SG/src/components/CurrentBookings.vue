@@ -2,7 +2,7 @@
 <body>
     <div id="Banner" class="banner">
         <div class="banner-wrap">
-            <div class="notice-text">Check out our promotions and don't forget to invite your friends for more perks!</div>
+            <div class="notice-text">Check out our promotions and don't forget to invite yourfriends for more perks!</div>
         </div>
     </div>
     <div data-collapse="medium" data-animation="default" data-duration="400" id="Navigation">
@@ -13,8 +13,8 @@
             <div class="navigation-right">
                 <a href="#home">Home</a>
                 <a href="#profile">Profile</a>
-                <a href="#PartnerEateries">Partner Eateries</a>
-                <a class = "current" href="#CurrentBookings">Current Bookings</a>
+                <router-link to="/partnereateries" exact>Partner Eateries</router-link>
+                <router-link class = "current" to="/currentbookings" exact>Current Bookings</router-link>
                 <a href="#declaration">Declaration</a>
             </div>
         </div>
@@ -32,9 +32,10 @@
 </template>
 
 <script>
-export default {
-    name: 'CurrentBookings'
-}
+    export default {
+        name: 'CurrentBookings',
+    }
+
 </script>
 
 <style>
