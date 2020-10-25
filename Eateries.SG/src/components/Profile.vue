@@ -2,7 +2,7 @@
 <body>
     <div id="Banner" class="banner">
         <div class="banner-wrap">
-            <div class="notice-text">Check out our promotions and don't forget to invite your friends for more perks!</div>
+            <div class="notice-text">Check out our promotions and don't forget to invite yourfriends for more perks!</div>
         </div>
     </div>
     <div data-collapse="medium" data-animation="default" data-duration="400" id="Navigation">
@@ -12,8 +12,8 @@
             </div>
             <div class="navigation-right">
                 <router-link to="/home" exact>Home</router-link>
-                <router-link to="/profile" exact>Profile</router-link>
-                <router-link class = "current" to="/partnereateries" exact>Partner Eateries</router-link>
+                <router-link class = "current"  to="/profile" exact>Profile</router-link>
+                <router-link to="/partnereateries" exact>Partner Eateries</router-link>
                 <router-link to="/currentbookings" exact>Current Bookings</router-link>
                 <router-link to="/declaration" exact>Declaration</router-link>
             </div>
@@ -22,8 +22,8 @@
     <div id="Header" class="header">
         <div id="container-flex">
             <div class="head-content">
-                <h1>Partner Eateries</h1>
-                <p>Treat your taste buds and satisfy your cravings with our wide selection of partner eateries!</p>
+                <h1>Profile</h1>
+                <p>Testing! Profile displayed here</p>
             </div>
         </div>
     </div>
@@ -32,9 +32,10 @@
 </template>
 
 <script>
-export default {
-    name: 'PartnerEateries'
-}
+    export default {
+        name: 'CurrentBookings',
+    }
+
 </script>
 
 <style>
@@ -48,7 +49,7 @@ body {
 h1 {
     margin-top: 20px;
     margin-bottom: 10px;
-    color: #191b22;
+    color: #f3f5fd;
     font-size: 60px;
     line-height: 1;
     font-weight: 700;
