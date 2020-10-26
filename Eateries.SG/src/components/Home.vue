@@ -11,7 +11,7 @@
                 <div class="logo-text">EATERIES.SG</div>
             </div>
             <div class="navigation-right">
-                <router-link class = "current" to="/home" exact>Home</router-link>
+                <router-link class = "current" to="/" exact>Home</router-link>
                 <router-link to="/profile" exact>Profile</router-link>
                 <router-link to="/partnereateries" exact>Partner Eateries</router-link>
                 <router-link to="/currentbookings" exact>Current Bookings</router-link>
@@ -23,19 +23,27 @@
         <div id="container-flex">
             <div class="head-content">
                 <h1>Home</h1>
-                <p>Testing! Home displayed here</p>
+                <p>Testing! Home displayed here. How else can i edit</p>
             </div>
         </div>
     </div>
+    <div>
+        <h2>More stuff down below</h2>
+        <additem></additem>
+    </div>
+    
 
 </body>  
 </template>
 
 <script>
+    import AddItem from './Additem.vue'
     export default {
         name: 'Home',
-    }
-
+        components:{
+            'additem': AddItem
+        }
+    }    
 </script>
 
 <style>

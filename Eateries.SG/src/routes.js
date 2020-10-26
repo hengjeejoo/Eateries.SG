@@ -7,7 +7,7 @@ import Declaration from './components/Declaration.vue'
 export default[
     {path:'/currentbookings',component:CurrentBookings},
     {path:'/partnereateries',component:PartnerEateries},
-    {path:'/home',component:Home},
+    {path:'/',component:Home},
     {path:'/profile',component:Profile},
     {path:'/declaration',component:Declaration}
 ]

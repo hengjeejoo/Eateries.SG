@@ -11,7 +11,7 @@
                 <div class="logo-text">EATERIES.SG</div>
             </div>
             <div class="navigation-right">
-                <router-link to="/home" exact>Home</router-link>
+                <router-link to="/" exact>Home</router-link>
                 <router-link to="/profile" exact>Profile</router-link>
                 <router-link to="/partnereateries" exact>Partner Eateries</router-link>
                 <router-link class = "current" to="/currentbookings" exact>Current Bookings</router-link>
