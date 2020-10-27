@@ -23,10 +23,31 @@
         <div id="container-flex">
             <div class="head-content">
                 <h1>Declaration</h1>
-                <p>Testing! Declaration subheadings here!</p>
+                <p>Do your part to make it a safer place for all</p>
             </div>
         </div>
     </div>
+    <div id="DeclarationBody">
+        <h3>Complete before entering the Eatery</h3>
+        <div class="form-block w-form">
+            <form id="wf-form-Email-Form" name="wf-form-Email-Form" data-name="Email Form">
+                <label for="temperature">Current Temperature:</label>
+                <br>
+                <input type="text" class="w-input" id="temperature">
+                <br>
+                <label for="symptoms">Do you have any COVID-19 symptoms that you recently acquired?:</label>
+                <br>
+                <input type="text" class="w-input" id="symptoms">
+                <br>
+                <label for="family">Do you have anyone in the same household having fever, and/or showing the any symptoms of COVID-19?</label>
+                <br>
+                <input type="text" id="family" class="w-input">
+                <br>
+                <button>Submit</button>
+            </form>
+        </div>
+    </div>
+
 
 </body>  
 </template>
@@ -39,6 +60,43 @@
 </script>
 
 <style>
+label {
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: Inter, sans-serif;
+    color: #333;
+    font-size: 15px;
+    
+}
+
+.w-input {
+    display: block;
+    width: 100%;
+    height: 38px;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #333333;
+    vertical-align: middle;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+
+button{
+    display: inline-block;
+    padding: 9px 15px;
+    background-color: #3898EC;
+    color: white;
+    border: 0;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 22;
+}
+
 body {
     font-family: Montserrat, Inter;
     color: #333;
@@ -282,6 +340,10 @@ p {
     background-position: 0px 600px, 0px 0px;
     background-size: cover, auto;
     opacity: 0.8;
+}
+
+#container-flex {
+    width: 100%;
 }
 
 .head-content {
