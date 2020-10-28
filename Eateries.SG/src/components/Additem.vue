@@ -26,6 +26,8 @@
     methods:{
         addItem: function () {
             database.collection('stuff').add(this.item);
+            this.item.name = "",
+            this.item.category = ""
         }
     }       
     }

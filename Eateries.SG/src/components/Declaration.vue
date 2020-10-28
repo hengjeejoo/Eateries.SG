@@ -27,24 +27,28 @@
             </div>
         </div>
     </div>
-    <div id="DeclarationBody">
+    <div>
         <h3>Complete before entering the Eatery</h3>
-        <div class="form-block w-form">
-            <form id="wf-form-Email-Form" name="wf-form-Email-Form" data-name="Email Form">
-                <label for="temperature">Current Temperature:</label>
+        <div class="">
+            <form id="temperature-form">
+                <label for="temp">Current Temperature:</label>
                 <br>
-                <input type="text" class="w-input" id="temperature">
+                <input type="text" class="w-input" v-model.lazy="content.temp">
                 <br>
                 <label for="symptoms">Do you have any COVID-19 symptoms that you recently acquired?:</label>
                 <br>
-                <input type="text" class="w-input" id="symptoms">
+                <input type="text" class="w-input" v-model.lazy="content.q1">
                 <br>
                 <label for="family">Do you have anyone in the same household having fever, and/or showing the any symptoms of COVID-19?</label>
                 <br>
-                <input type="text" id="family" class="w-input">
+                <input type="text" class="w-input" v-model.lazy="content.q2">
                 <br>
-                <button>Submit</button>
+                <button v-on:click.prevent="saveTemps">Submit</button>
             </form>
+        </div>
+        <div>
+            <button v-on:click.prevent="loadTemps()">Load Records</button>
+            <ul id="temperature-list"></ul>
         </div>
     </div>
 
@@ -53,9 +57,73 @@
 </template>
 
 <script>
+import database from '../firebase.js'
     export default {
         name: 'Declaration',
+        
+        data() {
+            return {
+                content : {
+                    temp : "",
+                    q1: "",
+                    q2: ""
+                }            
+            }
+        },
+
+        methods: {
+            renderTemperature: function(doc, tempList) {
+                let li = document.createElement('li');
+                let temp = document.createElement('span');
+                let q1 = document.createElement('span');
+                let q2 = document.createElement('span');
+                let space = document.createTextNode("   ");
+
+                li.setAttribute('data-id', doc.id);
+                temp.textContent = doc.data().temp;
+                q1.textContent = doc.data().q1;
+                q2.textContent = doc.data().q2;
+
+                li.appendChild(temp);
+                let counter = 0;
+                while (counter < 1000 ) {
+                    let space = document.createTextNode(" ");
+                    li.appendChild(space);
+                    counter++;
+                }
+                li.appendChild(space);
+                li.appendChild(q1);
+                li.appendChild(space);
+                li.appendChild(q2);
+
+                tempList.appendChild(li);
+            },
+            //getting data of temperatures from db
+            loadTemps: function() {
+                const tempList = document.querySelector('#temperature-list');
+                while (tempList.firstChild) {
+                    tempList.removeChild(tempList.lastChild);
+                }
+                database.collection('stuff').doc('gmJX3VpOcpE8MF8cgANo').collection('temperature').get().then(snapshot => {
+                    snapshot.docs.forEach(doc => {
+                        this.renderTemperature(doc, tempList);
+                    });
+                });
+            },
+
+            saveTemps: function() {
+                //const form = document.querySelector('#temperature-form');
+                //window.alert("donezo saving");
+                database.collection('stuff').doc('gmJX3VpOcpE8MF8cgANo').collection('temperature').add(this.content);
+                //window.alert("finished")
+                this.content.temp = "";
+                this.content.q1 = "";
+                this.content.q2 = "";
+            }
+        }
+
     }
+
 
 </script>
 
