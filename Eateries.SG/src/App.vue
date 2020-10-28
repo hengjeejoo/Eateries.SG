@@ -1,3 +1,6 @@
+<script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-storage.js"></script>
+
 <template>
   <div id="app">
     <router-view></router-view>
