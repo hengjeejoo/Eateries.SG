@@ -62,8 +62,7 @@ p {
 }
 
 .banner {
-    display: absolute;
-    top: 0px;
+    display: flex;
     min-height: 48px;
     justify-content: center;
     align-items: center;
@@ -73,14 +72,13 @@ p {
     font-size: 15px;
 } 
 
-/* .banner-wrap {
-    display: absolute;
-    top: 0px;
+.banner-wrap {
+    display: flex;
     width: 100%;
     max-width: 1000px;
     justify-content: center;
     align-items: center;
-} */
+}
 
 .notice-text {
     font-family: Inter, sans-serif;
@@ -181,7 +179,7 @@ p {
     height: 200px;
     justify-content: center;
     align-items: center;
-    background-image: url(https://www.youngparents.com.sg/wp-content/uploads/2018/02/6-best-brunch-spots-in-Singapore_4.jpg);
+    background-image: url(https://d1otfi4uhdq3fm.cloudfront.net/wp-content/uploads/2019/06/06000549/Lazy-Breakfast_result-1920x1417.jpg);
     background-position: 0px 600px, 0px 0px;
     background-size: cover, auto;
     opacity: 0.8;

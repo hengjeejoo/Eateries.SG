@@ -23,10 +23,10 @@
                 },
             }
         },
-    }
-    methods:{
-        additem:function(){
-            database.collection('items').add(this.item);
+        methods:{
+            additem(){
+                database.collection('items').add(this.item)
+            }
         }
     }
 </script>
