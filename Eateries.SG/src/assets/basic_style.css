@@ -1,0 +1,353 @@
+body {
+    font-family: Montserrat, Inter;
+    color: #333;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #f3f5fd;
+    font-size: 60px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    color: #C4C5E1;
+    font-size: 55px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px; 
+    color: #191b22;
+    font-size: 40px;
+    line-height: 1;
+    font-weight: 700;
+}
+
+h4 {
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    color: #191b22;
+    font-size: 28px;
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+h5 {
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    color: #08090a;
+    font-size: 22px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+}
+
+p {
+    margin-bottom: 10px; 
+    color: #000000;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+}
+
+.banner {
+    display: absolute;
+    top: 0px;
+    min-height: 48px;
+    justify-content: center;
+    align-items: center;
+    background-color: #b1b2d8;
+    font-family: Inter, sans-serif;
+    color: #ffffff;
+    font-size: 15px;
+} 
+
+/* .banner-wrap {
+    display: absolute;
+    top: 0px;
+    width: 100%;
+    max-width: 1000px;
+    justify-content: center;
+    align-items: center;
+} */
+
+.notice-text {
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 15px;
+    height: 20px;
+}
+
+.navigation-right a {
+    padding-right: 16px;
+    padding-left: 16px;
+    opacity: 0.8;
+    -webkit-transition: opacity 200ms ease;
+    transition: opacity 200ms ease;
+    color: #000000;
+    font-size: 16px;
+    text-transform: none;
+}
+
+.navigation-right a:hover {
+    opacity: 1;
+    color: #6b3c92;
+}
+
+.current {
+    font-family: Montserrat, sans-serif;
+    color: #b1b2d8;
+    font-weight: 600;
+}
+
+.navigation-container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px 3%;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-between;
+}
+
+.brand {
+    margin-right: 40px;
+}
+
+.logo-text {
+    font-family: Montserrat, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.navbar {
+    display: flex;
+    padding: 20px 3%;
+    align-items: center;
+    background-color: #fff;
+}
+
+.navigation-right {
+    display: flex;
+    padding: 20px 3%;
+    align-items: center;
+}
+
+.navigation-left {
+    display: flex;
+    padding: 20px 3%;
+    align-items: center;
+}
+
+.nav-menu {
+    margin-right: 14px;
+}
+
+.button {
+    display: flex;
+    min-height: 60px;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding: 5px 30px;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #f0bcbc;
+    font-family: Montserrat, sans-serif;
+    color: #f9f9f9;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    background-clip: border-box;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 15px;
+    padding: 50px 3%;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://www.youngparents.com.sg/wp-content/uploads/2018/02/6-best-brunch-spots-in-Singapore_4.jpg);
+    background-position: 0px 600px, 0px 0px;
+    background-size: cover, auto;
+    opacity: 0.8;
+}
+
+.head-content {
+    display: flex;
+    width: 100%;
+    margin-top: 5px;
+    padding-right: 40px;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    opacity: 1;
+}
+
+.content-section {
+    position: relative;
+    padding: 10px 3% 10px;
+    background-color: transparent;
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .title-wrap-centre {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 670px;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-left: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .layout-grid {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-columns: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+    grid-row-gap: 16px;
+    grid-column-gap: 16px;
+  }
+
+
+
+/* .footer-link {
+    margin-bottom: 12px;
+    padding-top: 8px;
+    padding-right: 6px;
+    padding-bottom: 8px;
+    color: #546285;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  
+  .footer-link:hover {
+    color: #28224b;
+  } */
+  
+/* 
+  .legal {
+    color: #353448;
+  }
+  
+  .webflow-link {
+    color: #35b8be;
+  }
+  
+  .footer-grid {
+    display: flex;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  
+  .title {
+    margin-bottom: 20px;
+    color: #08090a;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+  
+  .footer {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    padding: 100px 3% 60px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #dcf3f7;
+    text-decoration: none;
+  }
+  
+  .footer-column {
+    display: flex;
+    padding-right: 60px;
+    padding-left: 60px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-legal {
+    display: flex;
+    margin-top: 100px;
+    padding-top: 60px;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(126, 130, 143, 0.09);
+    font-size: 15px;
+  }
+  
+  .footer-detail-left {
+    display: flex;
+    width: 50%;
+    min-height: 40px;
+    align-items: center;
+  }
+  
+  .footer-detail-right {
+    display: flex;
+    width: 50%;
+    min-height: 40px;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+
+  .social-icon-wrap {
+    display: flex;
+  } 
+  
+  .social-link {
+    display: flex;
+    margin-right: 12px;
+    margin-left: 12px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(126, 130, 143, 0.3);
+    border-radius: 100px;
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease;
+  }
+  
+  .social-link:hover {
+    border-color: rgba(126, 130, 143, 0.86);
+  }
+  
+  .social-icon {
+    width: 18px;
+  } */
+
