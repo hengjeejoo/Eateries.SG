@@ -16,7 +16,7 @@
     export default{
         data(){
             return{
-                msg:"Add Iten",
+                msg:"Add Item",
                 item:{
                     name:"",
                     category:"",
@@ -24,7 +24,7 @@
             }
         },
         methods:{
-            additem(){
+            additem: function(){
                 database.collection('items').add(this.item)
             }
         }
